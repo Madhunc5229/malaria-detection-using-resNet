@@ -73,6 +73,10 @@ python3 metrics.py resNet50
 ### Results
 
 - The results are present in the `results` folder
+- To vizualize the tensorboard plots, type the following command in terminal and click on the link `http://localhost:6006/`
+```
+tensorboard --logdir runs/
+```
   
 #### Resutls for convNet:  
 

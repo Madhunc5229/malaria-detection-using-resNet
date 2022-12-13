@@ -70,6 +70,42 @@ python3 metrics.py resNet18
 ```
 python3 metrics.py resNet50
 ```
+### Results
+
+- The results are present in the `results` folder
+  
+#### Resutls for convNet:  
+
+- Loss:  
+<img src="results/convNet/Loss.png" width="800" alt="Alt text" title="">
+
+- Accuracy: 
+<img src="results/convNet/Accuracy.png" width="800" alt="Alt text" title="">
+
+- Confusion Matrix:
+<img src="results/convNet/confusion_matrix.png" width="800" alt="Alt text" title="">
+
+#### Resutls for resNet18:  
+
+- Loss:  
+<img src="results/resNet18/loss.png" width="800" alt="Alt text" title="">
+
+- Accuracy: 
+<img src="results/resNet18/accuracy.png" width="800" alt="Alt text" title="">
+
+- Confusion Matrix:
+<img src="results/resNet18/confusion_matrix.png" width="800" alt="Alt text" title="">
+
+#### Resutls for resNet50:  
+
+- Loss:  
+<img src="results/resNet50/loss.png" width="800" alt="Alt text" title="">
+
+- Accuracy: 
+<img src="results/resNet50/accuracy.png" width="800" alt="Alt text" title="">
+
+- Confusion Matrix:
+<img src="results/resNet50/confusion_matrix.png" width="800" alt="Alt text" title="">
 
 
 

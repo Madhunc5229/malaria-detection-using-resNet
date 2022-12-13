@@ -86,8 +86,6 @@ def train(n_epochs, model, train_dataloader, optimizer, criterion, use_cuda, mod
             train_acc,
             val_acc
             ))
-        # print("training loss: ", train_loss.item(), "training acc: ", train_acc)
-        # print("validation loss: ", val_loss.item(), "val acc: ", val_acc)
 
         writer.add_scalar("Loss/Train", train_loss, epoch)
         writer.add_scalar("Loss/Validation", val_loss, epoch)

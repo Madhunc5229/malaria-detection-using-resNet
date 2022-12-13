@@ -107,6 +107,14 @@ python3 metrics.py resNet50
 - Confusion Matrix:
 <img src="results/resNet50/confusion_matrix.png" width="800" alt="Alt text" title="">
 
+### Model Comparison:
+
+- Loss:  
+<img src="results/model_loss.png" width="800" alt="Alt text" title="">
+
+- Accuracy:  
+<img src="results/model_accuracy.png" width="800" alt="Alt text" title="">
+
 
 
 

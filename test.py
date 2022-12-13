@@ -1,6 +1,7 @@
 from glob import glob
 from PIL import Image
 from termcolor import colored
+from torchvision import transforms, models
 from models.model import *
 import numpy as np
 import matplotlib.pyplot as plt
@@ -56,3 +57,22 @@ if __name__=='__main__':
         PATH = 'models/convNet.pt'
         test_model.load_state_dict(torch.load(PATH))
         predict(model=test_model)
+    elif sys.argv[1] == 'resNet18':
+        net = models.resnet18(pretrained=True)
+        net.fc = nn.Linear(512, 2, bias=True)
+        
+        if use_cuda:
+            net = net.cuda()
+        PATH = 'models/resNet18.pt'
+        net.load_state_dict(torch.load(PATH))
+        predict(model=net)
+    
+    elif sys.argv[1] == 'resNet50':
+        net = models.resnet50(pretrained=True)
+        net.fc = nn.Linear(2048, 2, bias=True)
+        
+        if use_cuda:
+            net = net.cuda()
+        PATH = 'models/resNet50.pt'
+        net.load_state_dict(torch.load(PATH))
+        predict(model=net)
